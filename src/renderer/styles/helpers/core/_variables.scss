@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+//-----------------------------------------------------	
+// variables scss
+//-----------------------------------------------------	
+$css-prefix :"panda-";
+
+//font 相关，大小，粗细
+//-----------------------------------------------------
+$slin:400 !default;
+$normal: 500 !default; // 正常
+$blod: 600 !default; // 加粗
+$bloder: 700 !default; // 更粗  
+$fontSize: 16px !default; //主体字体大小
+$fontSizeSmall: 14px !default;
+$fontSizeSmaller: 12px !default;
+$fontSizeAdjust: 13px !default;
+$fontFamily: "Microsoft YaHei UI",
+"Microsoft YaHei",
+-apple-system,
+BlinkMacSystemFont,
+"Seogoe UI",
+Roboto,
+"Helvetica Neue",
+Helvetica,
+Arial,
+"PingFang SC",
+"Hiragino Sans GB",
+"Source Han Sans CN",
+sans-serif !default;
+// 苹方, 冬青黑体，微软雅黑UI（win8.1+），微软雅黑，思源黑体（安卓）
+
+
+//-----------------------------------------------------	
+
+//color 相关，文本色，背景色
+//-----------------------------------------------------	
+
+$colorText: #333333 !default; // 默认白色字体
+$colorText1: #3E495B !default; // 深灰色文本字体
+$colorText2: #5c5c5c !default; // 浅灰色的文本字体
+$colorTextBlue1: #51628F !default; // 热门部分内容标题,搜索 
+$colorTextBlue2: #6478A0 !default; // 热门部分内容简介
+$colorTextBlue3: #5A82E6 !default; // 浅蓝色
+$colorGreen1: #21af92 !default; //深绿色 已关注
+$colorBody: #FAFAFF !default; // body背景色
+$colorHeader: #44AAF8 !default; // header背景色
+$colorBanner: #4C75E1 !default; // banner背景色
+$colorBGWhite: #EBF0FA !default; // 浅白的背景颜色  
+$colorHeaderBorder:#3D91D3 !default; //功能键border颜色
+$colorHeaderBtn:#9FD2FB; //功能键颜色        
+
+//-----------------------------------------------------	
+
+//transition
+//-----------------------------------------------------	
+$time: .3s !default; // 过渡时间               
+//-----------------------------------------------------	
+
+//radius
+//-----------------------------------------------------	
+$radius: 15px !default;
+//-----------------------------------------------------	
+
+//box-shadow
+//-----------------------------------------------------	
+$shadow: 1px 2px 4px 0px rgba(85, 108, 141, 0.25) !default; //列表框阴影
+//-----------------------------------------------------	
+
+//border
+//-----------------------------------------------------
+$border: 1px solid #F0F3F5 !default;
+$break: 1px solid #E1E1E2 !default;

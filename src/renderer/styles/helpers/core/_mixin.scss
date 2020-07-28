@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+// clear
+//清楚浮动
+@mixin clear {
+  &::after{
+  content: '';
+  height: 0;
+  display: block;
+  clear: both;
+  }
+}
+
+// before after
+// 伪元素
+@mixin fake-element($content:'',$abs:true){
+  content: $content;
+  display: block;
+  @if $abs{
+    position: absolute;
+  }
+}
+
+// flex
+@mixin justify{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+//ellipsis
+//文本溢出省略
+@mixin text-ellipsis {
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap; 
+}
+
+//元素垂直水平居中对齐
+@mixin element-center-both($width){
+    width: $width;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  

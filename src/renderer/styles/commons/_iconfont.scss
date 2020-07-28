@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'iconfont';
+  /* project id 1683925 */
+  src: url('//at.alicdn.com/t/font_1683925_6gxjyjakpi8.eot');
+  src: url('//at.alicdn.com/t/font_1683925_6gxjyjakpi8.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_1683925_6gxjyjakpi8.woff2') format('woff2'),
+    url('//at.alicdn.com/t/font_1683925_6gxjyjakpi8.woff') format('woff'),
+    url('//at.alicdn.com/t/font_1683925_6gxjyjakpi8.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_1683925_6gxjyjakpi8.svg#iconfont') format('svg');
+}
+
+.#{$css-prefix}icon {
+  font-family: "iconfont" !important;
+  font-style: normal;
+  display: inline-block;
+  color: #D15858;
+  -webkit-font-smoothing: antialiased;
+}
+
+$iconClass:(lyric, '\e727')(trash, '\e61b')(phone, '\e613')(password, '\e65b')(sheet, '\e66f') (collect, '\e616')(user, '\e615')(album, '\e671')(playing, '\e7fb') (pause1 '\e670') (play1 '\e604')(random '\e622')(order '\e802')(cycle '\e66d')(single-cycle '\e66e')(music-list '\e724')(sound '\e753')(next '\e656') (pre '\e66c') (pause '\e643') (play '\e717') (add '\e659')(music '\e644') (download '\e627') (local-music '\e609') (like '\e61a') (close '\e637') (back '\e60b') (forword '\e653') (arrow-up '\e625') (arrow-down '\e600') (refresh '\e63a') (maximize '\e623') (reduce '\e7af') (minimize '\e61c') (email '\e601') (setting '\e612') (arrow-down1 '\e614');
+
+
+@each $icon in $iconClass {
+  $class: nth($icon, 1);
+  $fontValue: nth($icon, 2);
+
+  .#{$css-prefix}icon__#{$class}::before {
+    content: $fontValue;
+  }
+}

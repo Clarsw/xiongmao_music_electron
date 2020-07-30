@@ -1,3 +1,9 @@
+# xiongmao_music_electron
+
+
+基于vue-electron+node开发的具有音乐推荐功能的音乐网站，该部分为桌面端音乐平台部分，可进行登录注册、音乐人入驻、个人中心、在线点播、上传下载、歌曲搜索和排音乐收藏等功能。
+
+前台管理员部分项目地址为https://github.com/Clarsw/xiongmao_music_admin
 # my-master
 
 > An electron-vue project
